@@ -12,21 +12,28 @@ LANDMARKS = [
     "pepsi_gate",
     "sports_gate",
     "seoudi",
+    "sse",
     "waterfall",
     "library",
     "admin_building",
-    "cilantro",
 ]
 UNKNOWN = "unknown"         # label for photos outside the 7 (stretch goal)
+
+# Photo days. Photos from TEST_DATES go to the test split, all others to train.
+TEST_DATES = ["2026-11-30"]
+UTC_OFFSET_HOURS = 2        # Cairo; Pixel file names (PXL_...) are in UTC
+SUNSET_FROM_HOUR = 16       # local time; photos from 16:00 on are labelled sunset
 
 IMAGE_LONG_SIDE = 1024      # px, long side after resizing
 RATIO_TEST = 0.75           # Lowe's ratio test threshold
 RANSAC_THRESHOLD = 5.0      # px, reprojection error for findHomography
 MIN_INLIERS = 10            # below this, a pair counts as "no match"
+MAX_SCALE_CHANGE = 25       # a homography may change an area by at most this factor
 HIST_BINS = (8, 8, 8)       # HSV color histogram bins
 TINY_SIZE = 32              # tiny image is TINY_SIZE x TINY_SIZE grayscale
 PCA_COMPONENTS = 50
 KNN_K = 3
+MAX_KEYPOINTS = 1000        # method A keeps the strongest SIFT points per photo (speed)
 SEED = 42
 
 # Keypoints (step 2)

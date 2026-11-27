@@ -1,4 +1,4 @@
-"""Loading, resizing and splitting the dataset.  Owner: TEAMMATE"""
+"""Loading, resizing and splitting the dataset.  Owner: Ouail"""
 import cv2
 import numpy as np
 import pandas as pd

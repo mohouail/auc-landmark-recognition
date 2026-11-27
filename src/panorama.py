@@ -1,4 +1,4 @@
-"""Panorama stitching (step 5).  Owner: ME"""
+"""Panorama stitching (step 5).  Owner: Ouail"""
 
 
 def stitch_pair(img_left, img_right):

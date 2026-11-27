@@ -1,4 +1,4 @@
-"""Small shared helpers.  Owner: BOTH (agree before changing a signature)"""
+"""Small shared helpers.  Owner: BOTH"""
 import cv2
 import matplotlib.pyplot as plt
 
